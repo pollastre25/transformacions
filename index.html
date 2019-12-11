@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transformacions</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .rotar{
+            background-color: aquamarine;
+            transform: rotate(25.3deg);
+        }
+        .escalar{
+            background-color: bisque;
+            transform: scale(0.5);
+        }
+        .sesgar{
+            background-color: darksalmon;
+            transform: skewX(22.5);
+        }
+        .traslladar{
+            background-color: darkturquoise;
+            transform: translate(400px, -350px);
+            transition: 2s transform;
+        }
+        .traslladar:hover{
+            transform: translate(0,0);
+        }
+    </style>
+</head>
+<body>    
+    <div class="rotar"></div>
+    <div class="escalar"></div>
+    <div class="sesgar"></div>
+    <div class="traslladar"></div>
+</html>
